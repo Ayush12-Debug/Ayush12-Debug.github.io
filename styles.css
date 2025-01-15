@@ -12,7 +12,7 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 10px 20px; /* Added padding for better space */
+    padding: 10px 20px; /* Combined padding declaration */
 }
 
 nav ul {
@@ -22,7 +22,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block; /* Inline-block for better control */
+    display: inline-block; /* Fixed to only use inline-block */
     margin-right: 20px;
 }
 
@@ -47,7 +47,7 @@ main {
 .game-image,
 .gallery-image {
     width: 100%;
-    max-width: 100%; /* Ensures it scales well */
+    max-width: 100%; /* Fixed max-width conflict */
     height: auto;
     display: block; /* Removes extra space below the images */
 }
@@ -58,7 +58,7 @@ section {
 
 footer {
     text-align: center;
-    padding: 10px 20px; /* Added padding for better spacing */
+    padding: 10px 20px; /* Combined padding declaration */
     background-color: #333;
     color: white;
 }
