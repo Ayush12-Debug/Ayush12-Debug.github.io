@@ -47,7 +47,6 @@ main {
 .game-image,
 .gallery-image {
     width: 100%;
-    max-width: 100%; /* Fixed max-width conflict */
     height: auto;
     display: block; /* Removes extra space below the images */
 }
@@ -66,8 +65,12 @@ footer {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     /* Stack navigation items vertically */
+    nav ul {
+        padding-left: 0; /* Remove default padding for nav */
+    }
+
     nav ul li {
-        display: block;
+        display: block; /* Stack items vertically */
         margin-bottom: 10px; /* Added margin for separation */
     }
 
@@ -80,10 +83,11 @@ footer {
         padding: 15px; /* Adjust padding on smaller screens */
     }
 
-    /* Adjust image sizes for smaller screens */
+    /* Ensure the images scale well */
     .banner-image,
     .game-image,
     .gallery-image {
-        max-width: 100%; /* Ensure the images scale well */
+        width: 100%; /* Ensure images take full width */
+        max-width: none; /* Allow them to scale fully without restriction */
     }
 }
