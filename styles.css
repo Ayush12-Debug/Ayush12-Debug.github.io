@@ -47,6 +47,7 @@ main {
 .game-image,
 .gallery-image {
     width: 100%;
+    max-width: 100%; /* Fixed max-width conflict */
     height: auto;
     display: block; /* Removes extra space below the images */
 }
@@ -65,12 +66,8 @@ footer {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     /* Stack navigation items vertically */
-    nav ul {
-        padding-left: 0; /* Remove default padding for nav */
-    }
-
     nav ul li {
-        display: block; /* Stack items vertically */
+        display: block;
         margin-bottom: 10px; /* Added margin for separation */
     }
 
