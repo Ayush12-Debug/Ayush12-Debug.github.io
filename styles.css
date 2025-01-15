@@ -65,16 +65,25 @@ footer {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+    /* Stack navigation items vertically */
     nav ul li {
-        display: block; /* Stack navigation items vertically */
+        display: block;
         margin-bottom: 10px; /* Added margin for separation */
     }
 
+    /* Adjust padding on smaller screens */
     header, footer {
-        padding: 15px; /* Adjust padding on smaller screens */
+        padding: 15px;
     }
 
     main {
         padding: 15px; /* Adjust padding on smaller screens */
+    }
+
+    /* Adjust image sizes for smaller screens */
+    .banner-image,
+    .game-image,
+    .gallery-image {
+        max-width: 100%; /* Ensure the images scale well */
     }
 }
